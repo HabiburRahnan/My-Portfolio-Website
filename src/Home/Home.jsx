@@ -1,5 +1,9 @@
 import { useEffect } from "react";
 import Banner from "../Components/Banner/Banner";
+import Project from "../Components/Project/Project";
+import About from "../Components/About/About";
+import Contact from "../Components/Contact/Contact";
+import Skills from "../Components/Skills/Skills";
 
 const Home = () => {
 
@@ -14,7 +18,10 @@ const Home = () => {
     return (
         <div>
          <Banner></Banner>
-           <h1 className="text-red-900">Habibu Reactahman</h1> 
+         <Project></Project>
+         <Skills></Skills>
+         <About></About>
+         <Contact></Contact>
         </div>
     );
 };
