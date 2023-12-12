@@ -2,7 +2,8 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 
 const About = () => {
     return (
-        <div>
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" data-aos-duration="3000">
         <SectionTitle heading='About me' subHeading='About Me'></SectionTitle>
 
         <div className="hero  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">

@@ -41,7 +41,9 @@ const Project = () => {
         heading="My Latest Project"
         subHeading="Projects"
       ></SectionTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"  data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         {projects.map((project) => (
           <div key={project.id} className="card  bg-base-100 shadow-xl mx-2">
             <figure>
