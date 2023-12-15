@@ -11,7 +11,7 @@ const Skills = () => {
           seamless, end-to-end applications.
         </p>
         <h1 className="text-3xl text-center py-5">Technical Skills</h1>
-        <div className="flex justify-around items-center"  data-aos="fade-right" data-aos-easing="linear"
+        <div className="md:flex justify-around items-center ml-5 md:ml-0"  data-aos="fade-right" data-aos-easing="linear"
         data-aos-duration="2500">
           <div >
             <h1 className="text-pink-500 text-2xl">Front-end Development:</h1>

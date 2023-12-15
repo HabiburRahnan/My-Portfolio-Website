@@ -1,19 +1,30 @@
 import Swal from "sweetalert2";
+import { useRef } from "react";
 import SectionTitle from "../SectionTitle/SectionTitle";
-
+import emailjs from '@emailjs/browser';
 const Contact = () => {
-  const handleSend = (e) => {
-    e.preventDefault();
-const form = e.target
-    console.log(form);
-    Swal.fire({
-      position: "top-center",
-      icon: "success",
-      title: `Send successfully`,
-      showConfirmButton: false,
-      timer: 1500,
+
+
+
+const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm('service_2483vdl', 'template_9nt4vsv', form.current, 'M6mMDNMMx-nAvAZJX')
+    .then((result) => {
+      Swal.fire({
+             position: "top-center",
+              icon: "success",
+              title: `Send successfully`,
+             showConfirmButton: false,
+             timer: 1500,
+            });
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
     });
-  };
+};
 
   return (
     <>
@@ -21,7 +32,7 @@ const form = e.target
         <SectionTitle heading="Contact me" subHeading="---contact--"></SectionTitle>
       </div>
 
-      <form onSubmit={handleSend} data-aos="fade-up"
+      <form ref={form} onSubmit={sendEmail} data-aos="fade-up"
       data-aos-anchor-placement="bottom-bottom"  data-aos-duration="3000">
         <div className="flex w-full   gap-2">
           <div className="form-control w-[50%]">
@@ -30,6 +41,7 @@ const form = e.target
             </label>
             <input
               type="text"
+              name="user_name"
               placeholder="First Name"
               className="input input-bordered border-pink-500 w-full"
               required
@@ -42,6 +54,7 @@ const form = e.target
             </label>
             <input
               type="text"
+              name="user_name"
               placeholder="Last Name"
               className="input input-bordered border-pink-500 w-full"
               required
@@ -55,7 +68,7 @@ const form = e.target
               <span className="label-text">Email</span>
             </label>
             <input
-              name="description"
+            name="user_email"
               type="text"
               placeholder="Email"
               className="input input-bordered border-pink-500 w-full "
@@ -68,7 +81,7 @@ const form = e.target
               <span className="label-text">Phone</span>
             </label>
             <input
-              name="description"
+            name="user_phone"
               type="text"
               placeholder="Phone"
               className="input input-bordered border-pink-500 w-full "
@@ -79,6 +92,7 @@ const form = e.target
 
         <textarea
           placeholder="Write Your Text.................."
+          name="message"
           className="border-2 border-pink-500 w-full mt-6 rounded"
           cols="30"
           rows="10"></textarea>

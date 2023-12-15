@@ -11,7 +11,7 @@ const Education = () => {
         heading="my Education"
         subHeading="education"
       ></SectionTitle>
-      <div className="flex justify-around items-center"  data-aos="fade-right" data-aos-easing="linear"
+      <div className="md:flex justify-around items-center"  data-aos="fade-right" data-aos-easing="linear"
       data-aos-duration="2500">
       <div className="text-center" >
       <h1 className="text-2xl ">Rangpur Polytichnic Institute</h1>
