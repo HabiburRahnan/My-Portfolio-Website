@@ -10,7 +10,7 @@ const Footer = () => {
           src="https://i.ibb.co/zN62JfW/Gold-Luxury-Initial-Circle-Logo-1.png"
         ></img>
         <nav>
-          <header className="footer-title">Social</header>
+          <header className="footer-title">Usefull Links</header>
           <div className="grid grid-flow-col gap-4">
             <ul className="flex gap-5">
               <li>
