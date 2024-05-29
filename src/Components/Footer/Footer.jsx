@@ -1,57 +1,78 @@
+import { FaEnvelope, FaLocationPin, FaPhone } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaGithub, FaLinkedin, } from "react-icons/fa";
-
 const Footer = () => {
   return (
-    <div className="mt-5">
-      <footer className="footer p-10 bg-neutral text-neutral-content ">
-        <img
-          className="w-24"
-          src="https://i.ibb.co/zN62JfW/Gold-Luxury-Initial-Circle-Logo-1.png"
-        ></img>
-        <nav>
-          <header className="footer-title">Usefull Links</header>
-          <div className="grid grid-flow-col gap-4">
-            <ul className="flex gap-5">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/resume">Resume</Link>
-              </li>
-              <li>
-                <Link to="/project">Project</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <nav>
-          <header className="footer-title">Social</header>
-          <div className="grid grid-flow-col gap-4">
-            <Link to="https://github.com/HabiburRahnan">
-              <FaGithub className="text-4xl" />
-            </Link>
-            <Link to="https://www.facebook.com/profile.php?id=100047717885188">
-              <FaFacebookF className="text-4xl" />
-            </Link>
-            <Link to="https://www.linkedin.com/in/habibur-rahman2005">
-              <FaLinkedin className="text-4xl" />
-            </Link>
-          
-          </div>
-        </nav>
+    <div>
+      <footer className=" bg-[#061835] p-4 pt-10 md:p-10 text-white">
+        <div className="container mx-auto relative grid md:grid-cols-2 lg:grid-cols-3 bottom-0 p-4 md:p-10">
+          <nav className="w-full text-white">
+            <header className="flex gap-2 items-center">
+              <img
+                src="https://i.ibb.co/zN62JfW/Gold-Luxury-Initial-Circle-Logo-1.png"
+                alt="img"
+                className="w-8 h-8"
+              />
+              <p className="text-primary-black text-2xl font-bold">
+                MD Habibur Rahman
+              </p>
+            </header>
+            <div className="text-primary-black font-medium ">
+              <p className="font-semibold text-lg mt-5">Our Info</p>
+              <div className="">
+                <p className="flex items-center gap-2">
+                  <FaLocationPin className="text-white" />
+                  <span>Tajhat Rangpur, Bangladesh</span>
+                </p>
+                <p className="flex items-center gap-2">
+                  <FaPhone className="text-white" />
+                  <span>Call Us: +8801308102789</span>
+                </p>
+                <p className="flex items-center gap-2">
+                  <FaEnvelope className="text-white" />
+                  <a href="habiburrahmanofficial157@gmail.com">
+                    habiburrahmanofficial157@gmail.com
+                  </a>
+                </p>
+              </div>
+            </div>
+          </nav>
+
+          <nav className="w-full text-primary-black font-medium">
+            <header className="text-primary-black text-lg font-bold">
+              Useful Link
+            </header>
+            <div className="flex flex-col gap-1 mt-1">
+              <Link to ="/" className="link link-hover">Home</Link>
+              <Link to="/about" className="link link-hover">About</Link>
+              <Link to="resume" className="link link-hover">Resume</Link>
+              <Link to="/contact" className="link link-hover">Contact</Link>
+    
+            </div>
+          </nav>
+          <form className="w-full">
+            <header className="text-primary-black text-lg font-bold">
+              Subscribe
+            </header>
+            <fieldset className="form-control w-full font-medium">
+              <label className="label mt-1">
+                <span className="label-text text-white ">
+                  Enter your email address
+                </span>
+              </label>
+              <div className="relative mt-5">
+                <input
+                  type="email"
+                  placeholder="abc@gmail.com"
+                  className="p-3 rounded-full shadow-md text-primary-black w-full pr-16"
+                />
+                <button className="h-full text-white rounded-r-full px-2 bg-black hover:bg-black absolute top-0 right-0 rounded-l-none">
+                  Subscribe
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </footer>
-      <div className="footer footer-center p-4 bg-base-300 text-base-content">
-        <aside>
-          <p>Copyright © 2023 - All right reserved by Habibur Rahman</p>
-        </aside>
-      </div>
     </div>
   );
 };
