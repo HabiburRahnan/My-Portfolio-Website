@@ -8,7 +8,7 @@ const Footer = () => {
           <nav className="w-full text-white">
             <header className="flex gap-2 items-center">
               <img
-                src="https://i.ibb.co/zN62JfW/Gold-Luxury-Initial-Circle-Logo-1.png"
+                src="https://i.ibb.co/Q6CfBvw/Black-White-Simple-Monochrome-Initial-Name-Logo-1.png"
                 alt="img"
                 className="w-8 h-8"
               />

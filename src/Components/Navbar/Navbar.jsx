@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
 
         <Link to="/" className="w-20 rounded ">
-          <img src="https://i.ibb.co/zN62JfW/Gold-Luxury-Initial-Circle-Logo-1.png"></img>
+          <img src="https://i.ibb.co/Q6CfBvw/Black-White-Simple-Monochrome-Initial-Name-Logo-1.png"></img>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

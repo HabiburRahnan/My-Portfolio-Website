@@ -62,7 +62,7 @@ const Project = () => {
               <div className="flex justify-around items-center ">
                 <h2>
                   <Link
-                    className=" border border-[#C30AB5] rounded md:px-2"
+                    className=" border-double border-4 border-indigo-600  rounded md:px-2"
                     to={project.live}
                   >
                     Live Link
@@ -71,7 +71,7 @@ const Project = () => {
 
                 <h2>
                   <Link
-                    className=" border border-[#C30AB5] rounded md:px-2 "
+                    className=" border-double border-4 border-indigo-600  rounded md:px-2 "
                     to={project.client}
                   >
                     Client Code
@@ -80,7 +80,7 @@ const Project = () => {
 
                 <h2>
                   <Link
-                    className=" border border-[#C30AB5] rounded "
+                    className=" border-double border-4 border-indigo-600  rounded "
                     to={project.server}
                   >
                     Server Code
