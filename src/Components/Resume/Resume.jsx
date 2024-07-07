@@ -11,13 +11,13 @@ const Resume = () => {
           className="border border-pink-600 p-10 text-xl rounded"
           to="https://drive.google.com/file/d/1Q1NRKAaUSuw7hsQPpShHaM85yxH9sJ4E/view?usp=sharing"
         >
-          Views Resume Fornt-End
+          View Resume Fornt-End Developer
         </Link>
         <Link
           className="border border-pink-600 p-10 text-xl rounded"
           to="https://drive.google.com/file/d/1bGq8AkQquOMOPTOTm3d39I4T1NQxfJYT/view?usp=sharing"
         >
-          Views Resume MERN Stack
+          View Resume MERN Stack Developer
         </Link>
       </div>
     </div>
